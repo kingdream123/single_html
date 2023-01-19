@@ -1,0 +1,12 @@
+[workspace]
+members = [
+    "single_html_core",
+    "single_html_cli",
+    "single_html_gui"
+]
+
+[profile.release]
+panic = "unwind"
+
+[profile.dev.package."*"]
+opt-level = 3
